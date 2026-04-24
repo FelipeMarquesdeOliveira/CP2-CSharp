@@ -5,15 +5,8 @@ xmlns='http://www.w3.org/TR/REC-html40'>
 <meta charset="utf-8">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
-<meta name=HtmlVersions content="IE=edge">
 <title>Relatório Técnico - Checkpoint 2 C#</title>
 <style>
-@media print {
-    body { font-family: Calibri; font-size: 12pt; }
-    .no-print { display: none !important; }
-    @page { margin: 2cm; size: A4; }
-    h1 { page-break-before: always; }
-}
 body {
     font-family: Calibri, Arial, sans-serif;
     font-size: 12pt;
@@ -87,73 +80,9 @@ li {
     content: "□ ";
     font-size: 14pt;
 }
-.evidencia {
-    background-color: #FFF3CD;
-    padding: 15px;
-    margin: 15px 0;
-    border-left: 5px solid #FFC107;
-    border-radius: 4px;
-}
-.evidencia h3 {
-    margin-top: 0;
-    color: #856404;
-}
-.evidencia p {
-    margin: 8px 0;
-}
-.evidencia strong {
-    color: #856404;
-}
-.instrucoes {
-    background-color: #d4edda;
-    border: 2px solid #28a745;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-}
-.instrucoes h2 {
-    color: #28a745;
-    border: none;
-    margin-top: 0;
-}
-.instrucoes ol {
-    font-weight: bold;
-}
-.instrucoes li {
-    margin: 10px 0;
-}
-.instrucoes span {
-    font-weight: normal;
-    color: #555;
-}
-.print-btn {
-    background-color: #0078D4;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 14pt;
-    border-radius: 6px;
-    cursor: pointer;
-    margin: 10px 5px;
-}
-.print-btn:hover {
-    background-color: #005a9e;
-}
 </style>
 </head>
 <body>
-
-<div class="instrucoes no-print">
-<h2>📋 Instruções para Gerar PDF</h2>
-<ol>
-<li><strong>Abra este arquivo no Microsoft Word</strong> <span>(duplo clique no arquivo .html)</span></li>
-<li><strong>Salve como Documento Word</strong> <span>(Arquivo → Salvar como → .docx)</span></li>
-<li><strong>No Word, gere o PDF:</strong> <span>(Arquivo → Exportar → Criar PDF/XPS)</span></li>
-</ol>
-<p style="text-align: center; margin-top: 20px;">
-<button class="print-btn" onclick="window.print()">🖨️ Imprimir / Salvar como PDF</button>
-</p>
-</div>
 
 <h1>Relatório Técnico - Checkpoint 2</h1>
 <h1>C# Software Development</h1>
@@ -203,7 +132,7 @@ CP2_CSharp/
     ├── CP2_CSharp.BLL/         (Lógica de negócio)
     ├── CP2_CSharp.DAL/         (ADO.NET)
     ├── CP2_CSharp.Model/       (Entidade Produto)
-    ├── CP2_CSharp.Contracts/   (Interfaces)
+    ├── CP2_CSharp.Contracts/    (Interfaces)
     └── CP2_CSharp.Config/      (ConnectionFactory)
 </pre>
 
@@ -234,62 +163,9 @@ CP2_CSharp/
 
 <hr>
 
-<h2>4. Evidências</h2>
+<h2>4. Especificações Técnicas</h2>
 
-<div class="evidencia">
-<h3>Evidência 1 - Tela Principal e Estrutura da Solution</h3>
-<p><em>Descrição: Apresenta a interface principal do sistema de estoque e a estrutura em camadas da solução no Visual Studio.</em></p>
-<p><strong>Legenda:</strong> A imagem mostra a tela principal da aplicação com todos os botões de controle (Cadastrar, Atualizar, Excluir, Entrada, Saída, Buscar) e a janela do Visual Studio exibindo a estrutura da solution com as 6 camadas implementadas.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 2 - Cadastro de Produto em Execução</h3>
-<p><em>Descrição: Demonstra o funcionamento do cadastro de novos produtos no sistema.</em></p>
-<p><strong>Legenda:</strong> A imagem exibe o formulário preenchido com dados de um novo produto (Nome, Preço, Quantidade) e a mensagem de sucesso após o cadastro ser realizado com êxito.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 3 - Listagem dos Produtos no Grid</h3>
-<p><em>Descrição: Apresenta a listagem de todos os produtos cadastrados no DataGridView.</em></p>
-<p><strong>Legenda:</strong> A imagem mostra o grid com todos os produtos carregados do banco de dados, exibindo as colunas ID, Nome do Produto, Preço, Estoque, Ativo e Data de Cadastro.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 4 - Busca por Nome</h3>
-<p><em>Descrição: Demonstra o funcionamento da busca de produtos por nome.</em></p>
-<p><strong>Legenda:</strong> A imagem exibe o campo de busca com o texto digitado e o grid atualizado com o resultado do filtro, demonstrando que a busca por nome está funcionando corretamente.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 5 - Entrada ou Saída de Estoque</h3>
-<p><em>Descrição: Demonstra as operações de entrada e saída de estoque.</em></p>
-<p><strong>Legenda:</strong> A imagem mostra: (1) uma operação de entrada de estoque com quantidade sendo adicionada ao produto selecionado, e/ou (2) uma operação de saída com validação impedindo estoque negativo.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 6 - Tratamento de Erro ou Validação</h3>
-<p><em>Descrição: Demonstra as validações e tratamento de erros implementados.</em></p>
-<p><strong>Legenda:</strong> A imagem exibe uma mensagem de validação (ex: campo vazio, preço inválido, ou tentativa de saída maior que estoque disponível) demonstrando que o sistema valida e informa erros de forma clara ao usuário.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<div class="evidencia">
-<h3>Evidência 7 - Identificação da Base de Dados</h3>
-<p><em>Descrição: Mostra o nome da base de dados no padrão padronizado.</em></p>
-<p><strong>Legenda:</strong> A imagem exibe o SQL Server Management Studio com o Object Explorer aberto, mostrando claramente o nome do banco de dados <strong>DB_Felipe_RM556319</strong> conforme o padrão exigido: DB_PrimeiroNome_RM.</p>
-<p style="color: #cc0000; font-weight: bold;">[INSERIR PRINT AQUI]</p>
-</div>
-
-<hr>
-
-<h2>5. Especificações Técnicas</h2>
-
-<h3>5.1 Banco de Dados</h3>
+<h3>4.1 Banco de Dados</h3>
 <table>
 <tr><th>Item</th><th>Valor</th></tr>
 <tr><td>Nome do Banco</td><td>DB_Felipe_RM556319</td></tr>
@@ -298,10 +174,10 @@ CP2_CSharp/
 <tr><td>Conexão</td><td>Trusted Connection (Windows Authentication)</td></tr>
 </table>
 
-<h3>5.2 Connection String</h3>
+<h3>4.2 Connection String</h3>
 <pre>Server=localhost;Database=DB_Felipe_RM556319;Trusted_Connection=True;TrustServerCertificate=True;</pre>
 
-<h3>5.3 Tecnologias Utilizadas</h3>
+<h3>4.3 Tecnologias Utilizadas</h3>
 <ul>
 <li>.NET 8.0</li>
 <li>Windows Forms</li>
@@ -311,16 +187,16 @@ CP2_CSharp/
 
 <hr>
 
-<h2>6. Conclusão do Grupo</h2>
+<h2>5. Conclusão do Grupo</h2>
 
-<h3>6.1 Dificuldades Encontradas</h3>
+<h3>5.1 Dificuldades Encontradas</h3>
 <ul>
 <li>Organização inicial da estrutura em camadas</li>
 <li>Implementação das validações de forma consistente</li>
 <li>Garantir que o SQL não fosse executado diretamente no formulário</li>
 </ul>
 
-<h3>6.2 Melhorias Aplicadas</h3>
+<h3>5.2 Melhorias Aplicadas</h3>
 <ul>
 <li>Interface moderna com cores diferenciadas por ação</li>
 <li>Auto-recarregamento do grid após todas as operações</li>
@@ -329,7 +205,7 @@ CP2_CSharp/
 <li>Uso de interfaces para baixo acoplamento</li>
 </ul>
 
-<h3>6.3 Aprendizados</h3>
+<h3>5.3 Aprendizados</h3>
 <ul>
 <li>Separação de responsabilidades em camadas</li>
 <li>Uso de interfaces para inversão de controle</li>
@@ -340,7 +216,7 @@ CP2_CSharp/
 
 <hr>
 
-<h2>7. Critérios de Avaliação Atendidos</h2>
+<h2>6. Critérios de Avaliação Atendidos</h2>
 
 <table>
 <tr><th>Critério</th><th>Pontos</th><th>Status</th></tr>
