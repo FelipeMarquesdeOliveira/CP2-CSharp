@@ -4,12 +4,12 @@
 
 | Integrante | RM | Turma |
 |------------|-----|-------|
-| Felipe Marques de Oliveira | 556319 | 1TDS |
-| Gabriel Barros Cisoto | 556309 | 1TDS |
+| Felipe Marques de Oliveira | 556319 | 3ESPH |
+| Gabriel Barros Cisoto | 556309 | 3ESPH |
 
 **Disciplina:** C# Software Development
 **Professor:** Angel Antonio Gonzalez Martinez
-**Instituição:** FIAP - 1º Semestre de 2026
+**Instituição:** FIAP - 2º Semestre de 2026
 
 ---
 
