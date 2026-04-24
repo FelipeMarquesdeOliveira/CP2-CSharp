@@ -1,104 +1,21 @@
-<html xmlns:o='urn:schemas-microsoft-com:office:office'
-xmlns:w='urn:schemas-microsoft-com:office:word'
-xmlns='http://www.w3.org/TR/REC-html40'>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
+<meta charset="UTF-8">
 <title>Relatório Técnico - Checkpoint 2 C#</title>
-<style>
-body {
-    font-family: Calibri, Arial, sans-serif;
-    font-size: 12pt;
-    line-height: 1.4;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-h1 {
-    font-size: 20pt;
-    color: #0078D4;
-    text-align: center;
-    margin-top: 0;
-}
-h2 {
-    font-size: 14pt;
-    color: #0078D4;
-    border-bottom: 2px solid #0078D4;
-    padding-bottom: 5px;
-    margin-top: 25px;
-}
-h3 {
-    font-size: 12pt;
-    color: #333;
-    margin-top: 20px;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 15px 0;
-    page-break-inside: avoid;
-}
-th, td {
-    border: 1px solid #666;
-    padding: 8px;
-    text-align: left;
-}
-th {
-    background-color: #0078D4;
-    color: white;
-    font-weight: bold;
-}
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-pre {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    font-family: Consolas, monospace;
-    font-size: 10pt;
-    overflow-x: auto;
-}
-ul {
-    margin: 10px 0;
-    padding-left: 25px;
-}
-li {
-    margin: 5px 0;
-}
-.checklist {
-    list-style-type: none;
-    padding-left: 0;
-}
-.checklist li {
-    padding: 5px 0;
-}
-.checklist li::before {
-    content: "□ ";
-    font-size: 14pt;
-}
-</style>
 </head>
 <body>
 
 <h1>Relatório Técnico - Checkpoint 2</h1>
-<h1>C# Software Development</h1>
-<p style="text-align: center; font-size: 14pt;">
-<strong>Professor:</strong> Angel Antonio Gonzalez Martinez<br>
-<strong>Data:</strong> 1º Semestre de 2026
-</p>
+<h2>C# Software Development</h2>
+<p><strong>Professor:</strong> Angel Antonio Gonzalez Martinez<br>
+<strong>Data:</strong> 1º Semestre de 2026</p>
 
 <hr>
 
 <h2>1. Identificação dos Integrantes</h2>
-<table>
-<tr><th>Nome</th><th>RM</th><th>Turma</th></tr>
-<tr><td>Felipe Marques de Oliveira</td><td>556319</td><td>1TDS</td></tr>
-<tr><td>Gabriel Barros Cisoto</td><td>556309</td><td>1TDS</td></tr>
-</table>
+<p><strong>Aluno 1:</strong> Felipe Marques de Oliveira - RM: 556319 - Turma: 1TDS<br>
+<strong>Aluno 2:</strong> Gabriel Barros Cisoto - RM: 556309 - Turma: 1TDS</p>
 
 <hr>
 
@@ -108,48 +25,44 @@ li {
 <p>Sistema de Gestão de Estoque em camadas utilizando Windows Forms, ADO.NET e SQL Server. A aplicação permite o cadastro, listagem, busca, entrada e saída de produtos, com validações completas e tratamento de erros.</p>
 
 <h3>2.2 Arquitetura Adoptada</h3>
-<p>A solução foi estruturada em 6 camadas bem definidas, seguindo o padrão de arquitetura em camadas:</p>
-
-<table>
-<tr><th>Camada</th><th>Responsabilidade</th></tr>
-<tr><td>UI (Presentation)</td><td>Interface Windows Forms, interação com usuário</td></tr>
-<tr><td>BLL (Business)</td><td>Regras de negócio, validações</td></tr>
-<tr><td>DAL (Data Access)</td><td>Comunicação com banco via ADO.NET</td></tr>
-<tr><td>Model</td><td>Entidades e objetos de domínio</td></tr>
-<tr><td>Contracts</td><td>Interfaces para inversão de controle</td></tr>
-<tr><td>Config</td><td>Configurações centralizadas (ConnectionFactory)</td></tr>
-</table>
+<p>A solução foi estruturada em 6 camadas bem definidas:</p>
+<ul>
+<li>UI (Presentation) - Interface Windows Forms</li>
+<li>BLL (Business) - Regras de negócio e validações</li>
+<li>DAL (Data Access) - Comunicação com banco via ADO.NET</li>
+<li>Model - Entidades e objetos de domínio</li>
+<li>Contracts - Interfaces para inversão de controle</li>
+<li>Config - Configurações centralizadas</li>
+</ul>
 
 <h3>2.3 Estrutura da Solution</h3>
-<pre>
-CP2_CSharp/
-├── CP2_CSharp.sln
-├── README.md
-├── scripts/
-│   └── 01_CreateDatabase.sql
-└── src/
-    ├── CP2_CSharp.UI/          (Windows Forms)
-    ├── CP2_CSharp.BLL/         (Lógica de negócio)
-    ├── CP2_CSharp.DAL/         (ADO.NET)
-    ├── CP2_CSharp.Model/       (Entidade Produto)
-    ├── CP2_CSharp.Contracts/    (Interfaces)
-    └── CP2_CSharp.Config/      (ConnectionFactory)
-</pre>
+<p>CP2_CSharp/<br>
+├── CP2_CSharp.sln<br>
+├── README.md<br>
+├── scripts/<br>
+│   └── 01_CreateDatabase.sql<br>
+└── src/<br>
+    ├── CP2_CSharp.UI/<br>
+    ├── CP2_CSharp.BLL/<br>
+    ├── CP2_CSharp.DAL/<br>
+    ├── CP2_CSharp.Model/<br>
+    ├── CP2_CSharp.Contracts/<br>
+    └── CP2_CSharp.Config/</p>
 
 <hr>
 
 <h2>3. Funcionalidades Implementadas</h2>
 
 <h3>3.1 Funcionalidades Obrigatórias</h3>
-<ul class="checklist">
-<li><b>Cadastro de produtos</b> - Nome, preço e quantidade inicial</li>
-<li><b>Listagem de produtos</b> - Grid com todos os produtos ativos</li>
-<li><b>Busca por nome</b> - Filtro em tempo real</li>
-<li><b>Entrada de estoque</b> - Aumentar quantidade disponível</li>
-<li><b>Saída de estoque</b> - Diminuir quantidade disponível</li>
-<li><b>Impedimento de estoque negativo</b> - Validação implementada</li>
-<li><b>Atualização de produtos</b> - Editar dados existentes</li>
-<li><b>Exclusão lógica</b> - Soft delete (campo Ativo)</li>
+<ul>
+<li>Cadastro de produtos - Nome, preço e quantidade inicial</li>
+<li>Listagem de produtos - Grid com todos os produtos ativos</li>
+<li>Busca por nome - Filtro em tempo real</li>
+<li>Entrada de estoque - Aumentar quantidade disponível</li>
+<li>Saída de estoque - Diminuir quantidade disponível</li>
+<li>Impedimento de estoque negativo - Validação implementada</li>
+<li>Atualização de produtos - Editar dados existentes</li>
+<li>Exclusão lógica - Soft delete (campo Ativo)</li>
 </ul>
 
 <h3>3.2 Validações Implementadas</h3>
@@ -166,16 +79,13 @@ CP2_CSharp/
 <h2>4. Especificações Técnicas</h2>
 
 <h3>4.1 Banco de Dados</h3>
-<table>
-<tr><th>Item</th><th>Valor</th></tr>
-<tr><td>Nome do Banco</td><td>DB_Felipe_RM556319</td></tr>
-<tr><td>Tabela Principal</td><td>Produto</td></tr>
-<tr><td>Campos</td><td>Id, Nome, Preco, Quantidade, Ativo, DataCadastro</td></tr>
-<tr><td>Conexão</td><td>Trusted Connection (Windows Authentication)</td></tr>
-</table>
+<p><strong>Nome do Banco:</strong> DB_Felipe_RM556319<br>
+<strong>Tabela Principal:</strong> Produto<br>
+<strong>Campos:</strong> Id, Nome, Preco, Quantidade, Ativo, DataCadastro<br>
+<strong>Conexão:</strong> Trusted Connection (Windows Authentication)</p>
 
 <h3>4.2 Connection String</h3>
-<pre>Server=localhost;Database=DB_Felipe_RM556319;Trusted_Connection=True;TrustServerCertificate=True;</pre>
+<p>Server=localhost;Database=DB_Felipe_RM556319;Trusted_Connection=True;TrustServerCertificate=True;</p>
 
 <h3>4.3 Tecnologias Utilizadas</h3>
 <ul>
@@ -217,26 +127,22 @@ CP2_CSharp/
 <hr>
 
 <h2>6. Critérios de Avaliação Atendidos</h2>
-
-<table>
-<tr><th>Critério</th><th>Pontos</th><th>Status</th></tr>
-<tr><td>Organização da solução e arquitetura</td><td>2,0</td><td>✅ Implementado</td></tr>
-<tr><td>Funcionalidades obrigatórias</td><td>2,0</td><td>✅ Implementado</td></tr>
-<tr><td>POO, interfaces e modularização</td><td>1,5</td><td>✅ Implementado</td></tr>
-<tr><td>Integração com banco e ADO.NET</td><td>1,5</td><td>✅ Implementado</td></tr>
-<tr><td>Validações e tratamento de erros</td><td>1,5</td><td>✅ Implementado</td></tr>
-<tr><td>Relatório, README e evidências</td><td>1,0</td><td>✅ Implementado</td></tr>
-<tr><td>Criatividade e refinamento</td><td>0,5</td><td>✅ Implementado</td></tr>
-<tr><td><strong>TOTAL</strong></td><td><strong>10,0</strong></td><td><strong>✅</strong></td></tr>
-</table>
+<ul>
+<li>Organização da solução e arquitetura - 2,0 pts</li>
+<li>Funcionalidades obrigatórias - 2,0 pts</li>
+<li>POO, interfaces e modularização - 1,5 pts</li>
+<li>Integração com banco e ADO.NET - 1,5 pts</li>
+<li>Validações e tratamento de erros - 1,5 pts</li>
+<li>Relatório, README e evidências - 1,0 pts</li>
+<li>Criatividade e refinamento - 0,5 pts</li>
+<li><strong>TOTAL: 10,0 pts</strong></li>
+</ul>
 
 <hr>
 
-<p style="text-align: center; font-size: 10pt; color: #666;">
-<em>Checkpoint 2 - C# Software Development<br>
+<p><em>Checkpoint 2 - C# Software Development<br>
 Professor Angel Antonio Gonzalez Martinez<br>
-FIAP - 1º Semestre de 2026</em>
-</p>
+FIAP - 1º Semestre de 2026</em></p>
 
 </body>
 </html>
