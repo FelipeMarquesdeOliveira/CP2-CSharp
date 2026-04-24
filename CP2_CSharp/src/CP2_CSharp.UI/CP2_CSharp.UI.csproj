@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CP2_CSharp.BLL\CP2_CSharp.BLL.csproj" />
+    <ProjectReference Include="..\CP2_CSharp.Contracts\CP2_CSharp.Contracts.csproj" />
+    <ProjectReference Include="..\CP2_CSharp.Model\CP2_CSharp.Model.csproj" />
+    <ProjectReference Include="..\CP2_CSharp.Config\CP2_CSharp.Config.csproj" />
+  </ItemGroup>
+
+</Project>

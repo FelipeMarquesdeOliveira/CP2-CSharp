@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CP2_CSharp.Model\CP2_CSharp.Model.csproj" />
+    <ProjectReference Include="..\CP2_CSharp.Contracts\CP2_CSharp.Contracts.csproj" />
+    <ProjectReference Include="..\CP2_CSharp.DAL\CP2_CSharp.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
