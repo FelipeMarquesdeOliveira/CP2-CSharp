@@ -134,6 +134,3 @@ CP2_CSharp/
 | Relatório, README e evidências | 1,0 | ✅ |
 | Criatividade e refinamento | 0,5 | ✅ |
 
----
-
-**Bom checkpoint!**
